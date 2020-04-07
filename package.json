@@ -1,0 +1,44 @@
+{
+  "name": "utils-pwa",
+  "version": "0.1.0",
+  "description": "A webmap PWA for Forest City Public Works",
+  "scripts": {
+    "start": "http-server -p 80 -o",
+    "start-dev": "http-server ./dist",
+    "deploy": "node_modules/netlify-cli/bin/run deploy --prod",
+    "cache": "node scripts/pwa-sw-sample",
+    "workbox-wizard": "node node_modules/workbox-cli/build/bin.js wizard",
+    "workbox-cache": "node node_modules/workbox-cli/build/bin.js generateSW workbox-config.js",
+    "workbox-cache-dist": "node node_modules/workbox-cli/build/bin.js generateSW workbox-config-dist.js",
+    "purge": "node scripts/pwa-purge"
+  },
+  "keywords": [
+    "progressive web app",
+    "maps",
+    "leaflet",
+    "openmaptiles",
+    "vector tiles"
+  ],
+  "author": "Drew Harris",
+  "license": "MIT",
+  "dependencies": {
+    "fs-extra": "^7.0.1",
+    "http-server": "^0.11.1",
+    "mapbox-gl": "^0.53.1",
+    "mbtiles2ungzpbf": "^1.1.5",
+    "netlify-cli": "^2.11.15",
+    "workbox-cli": "^4.3.1"
+  },
+  "devDependencies": {
+    "delete": "^1.1.0",
+    "reveal-md": "^3.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/forestcityNC/utils-pwa.git"
+  },
+  "bugs": {
+    "url": "https://github.com/reyemtm/pwa-maps/issues"
+  },
+  "homepage": "https://github.com/reyemtm/pwa-maps#readme"
+}

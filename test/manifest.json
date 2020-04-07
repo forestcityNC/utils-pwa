@@ -1,0 +1,16 @@
+{
+  "name": "FC Utilities PWA",
+  "short_name": "PWA",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/images/town-seal.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "background_color": "#db3ffo3",
+  "theme_color": "#007a00",
+  "display": "standalone"
+}
